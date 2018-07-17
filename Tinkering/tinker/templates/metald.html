@@ -1,0 +1,111 @@
+﻿{% extends 'layout_logged_in.html' %}
+{% load static %}
+{% block content %}
+<style>
+    .main
+    {
+        padding:10vh 10vw 10vh 10vw;
+    }
+
+</style>
+    
+         
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+         
+     
+     <body>
+
+
+
+
+     <link rel="stylesheet" href="{% static 'faci2.css' %}">
+
+
+
+
+
+     <div id ="top"  class="main">
+
+	<div id = "Lathe"><br><br>
+
+             <h3>CNC Lathe</h3><br>
+
+             <div class = "row"><div class = "col">    <h4>CNC Lathe Machine</h4></div></div><br>
+             <div class = "row">
+                 <div class = "col-sm-4">
+                     <img class="machinesimg" src="{% static 'CSS/gallery/jpg/machines/cnc-lathe.jpg' %}">
+                 </div>
+                 <div class = "col-sm-8">
+                     <table class="table table-hover  table-bordered">
+
+
+                         <tr>
+                             <td rowspan= '4'>Capacity</td><td>Standard Turning Diameter</td><td>50 mm</td>
+                         </tr>
+                         <tr>
+                             <td>Maximum Turning Diameter</td><td>55 mm</td>
+                         </tr>
+                         <tr>
+                             <td>Maximum Turning Length</td><td>70 mm</td>
+                         </tr>
+                         <tr>
+                             <td>Swing Overbed</td><td>150 mm</td>
+                         </tr>
+                         <tr>
+                             <td rowspan = '2'>Travel</td><td>Along X</td><td>125 mm</td>
+                         </tr>
+                         <tr>
+                             <td>Along Z</td><td>90mm</td>
+                         </tr>
+                         <tr>
+                             <td rowspan= '2'>Spindle</td><td>Speed</td><td>3500 rpm</td>
+                         </tr>
+                         <tr>
+                             <td>Type</td><td>Cartridge</td>
+                         </tr>
+                         <tr>
+                             <td colspan='2'>CNC Controller</td><td>Siemens</td>
+                         </tr>
+                         <tr>
+                             <td colspan='2'>Enclosure Type</td><td>Fully Enclosed</td>
+                         </tr>
+                         <tr>
+                             <td colspan='2'>Lubrication System</td><td>Centralized</td>
+                         </tr>
+                         <tr>
+                             <td colspan='2' rowspan='8'>Included Accessories</td><td>Hydrolic jaw chuck with suitable closed cylinder.</td>
+                         </tr>
+                         <tr><td>Automatic centralized lubrication unit.</td></tr>
+                         <tr><td>Operation Manual</td></tr>
+                         <tr><td>Panel cooling fan</td></tr>
+                         <tr><td>Chip and Coolant tray</td></tr>
+                         <tr><td>Coolant system</td></tr>
+                         <tr><td>Work piece cleaning gun</td></tr>
+                         <tr><td>Spindle Oil cooler</td></tr>
+                     </table>
+                 </div>
+             </div>
+         </div>
+
+
+
+
+
+
+                <div id ="VMC"><br><br>
+                    <h3>VMC</h3>
+                    <img class="machines" src = "{% static 'CSS/gallery/jpg/machines/vmc.jpg' %}">
+                </div>
+
+
+
+	
+     </div>
+
+     </body>
+{% endblock %}
+
+ 

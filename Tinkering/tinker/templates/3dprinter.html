@@ -1,0 +1,344 @@
+﻿{% extends 'layout_logged_in.html' %}
+{% load static %}
+{% block content %}
+<style>
+    .main
+    {
+        padding:10vh 10vw 10vh 10vw;
+    }
+
+</style>
+    
+        
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+         
+     
+     <body>
+
+
+
+
+     <link rel="stylesheet" href="{% static 'CSS/faci2.css' %}">
+
+
+
+
+
+     <div id ="top"  class="main">
+
+
+
+
+        <!-- 3D Printer Start-->
+         <div id = "3DPrinter" >
+             <div class = "row"><div class = "col">  <h3>3D printers</h3></div></div>
+             <div class = "row"><div class = "col">  <h4>Ultimaker 2 Extended+</h4></div></div>
+             <div class = "row">
+                 <div class="col-sm-4"><img class="machinesimg" src="{% static 'CSS/gallery/jpg/machines/ultimaker.png' %}"></div>
+                 <div class = "col-sm-8">
+                     <table class="table table-hover  table-bordered">
+
+                         <tr>
+                             <th colspan="2"><center> Specification</center></th>
+                         </tr>
+                                                             <tr>
+                                                                 <td>Build plate</td>
+                                                                 <td>50°C to 100°C heated glass build plate</td>
+                                                             </tr>
+                                                             <tr>
+                                                                 <td>Layer resolution</td>
+                                                                 <td>
+                                                                     0.25 mm nozzle: 150 to 60 micron<br>
+                                                                     0.40 mm nozzle: 200 to 20 micron<br>
+                                                                     0.60 mm nozzle: 400 to 20 micron<br>
+                                                                     0.80 mm nozzle: 600 to 20 micron
+                                                                 </td>
+                                                             </tr>
+                                                             <tr>
+                                                                 <td>Print technology</td>
+                                                                 <td>Fused Deposition Modelling (FDM)</td>
+                                                             </tr>
+                                                             <tr>
+                                                                 <td>Build-volume</td>
+                                                                 <td>223 x 223 x 305 mm</td>
+                                                             </tr>
+                                                             <tr>
+                                                                 <td>Print head</td>
+                                                                 <td>travel speed 30 to 300 mm/s</td>
+                                                             </tr>
+                                                             <tr>
+                                                                 <td>XYZ accuracy</td>
+                                                                 <td>12.5, 12.5, 5 micron</td>
+                                                             </tr>
+                                                             <tr>
+                                                                 <td>Nozzle diameter</td>
+                                                                 <td>0.25, 0.4, 0.6 and 0.8 mm</td>
+                                                             </tr>
+                                                             <tr>
+                                                                 <td>Nozzle temperature</td>
+                                                                 <td>180 °C to 260 °C</td>
+                                                             </tr>
+                                                             <tr>
+                                                                 <td>Filament diameter</td>
+                                                                 <td>2.85mm</td>
+                                                             </tr>
+                                                             <tr>
+                                                                 <td>Supported materials</td>
+                                                                 <td>PLA, ABS, CPE, CPE+, PC, Nylon, TPU 95A</td>
+                                                             </tr>
+                     </table>
+                 </div>
+             </div>
+
+
+            <br><br>
+
+             <div class = "row"><div class = "col">    <h4>Delta Wasp 2040</h4></div></div>
+             <div class = "row">
+                 <div class = "col-sm-4">
+                     <img class="machinesimg" src="{% static 'CSS/gallery/jpg/machines/delta.png' %}">
+                 </div>
+                 <div class = "col-sm-8">
+                     <table class="table table-hover  table-bordered">
+                                                             <tr>
+                                                                 <td>Build plate</td>
+                                                                 <td>50°C to 100°C heated glass build plate</td>
+                                                             </tr>
+                                                             <tr>
+                                                                 <td>Layer resolution</td>
+                                                                 <td>50 microns</td>
+                                                             </tr>
+                                                             <tr>
+                                                                 <td>Print technology</td>
+                                                                 <td>Fused Deposition Modelling (FDM)</td>
+                                                             </tr>
+                                                             <tr>
+                                                                 <td>Cylindric print area</td>
+                                                                 <td>Ø 200 mm – 400 mm h</td>
+                                                             </tr>
+                                                             <tr>
+                                                                 <td>Print head travel speed</td>
+                                                                 <td>30 to 300 mm/s</td>
+                                                             </tr>
+                                                             <tr>
+                                                                 <td>Nozzle diameter</td>
+                                                                 <td>0.4 mm (0.7 mm, 0.9 mm)</td>
+                                                             </tr>
+                                                             <tr>
+                                                                 <td>Nozzle temperature</td>
+                                                                 <td>180 °C to 260 °C</td>
+                                                             </tr>
+                                                             <tr>
+                                                                 <td>Filament diameter</td>
+                                                                 <td>1.75 mm</td>
+                                                             </tr>
+                                                             <tr>
+                                                                 <td>Supported materials</td>
+                                                                 <td>PLA, ABS, Flex, HIPS, PETG</td>
+                                                             </tr>
+                                                             <tr>
+                                                                 <td>Changeable extruder</td>
+                                                                 <td>Porcelain</td>
+                                                             </tr>
+                                                              </table>
+                 </div>
+             </div>
+             <br><br>
+             <div class = "row"><div class = "col">    <h4>Power Wasp EVO</h4></div></div>
+             <div class = "row">
+                 <div class = "col-sm-4">
+                     <img class="machinesimg" style="width:28vw;" src="{% static 'CSS/gallery/jpg/machines/power.png' %}">
+                 </div>
+                 <div class = "col-sm-8">
+                     <table class="table table-hover  table-bordered">
+
+                                                             <tr>
+                                                                 <td>Build plate</td>
+                                                                 <td>50 °C to 100 °C heated glass build plate</td>
+                                                             <tr>
+                                                                 <td>Print resolution</td>
+                                                                 <td>50 microns</td>
+                                                             <tr>
+                                                                 <td>Print technology</td>
+                                                                 <td>Fused Deposition Modelling (FDM)</td>
+                                                             <tr>
+                                                                 <td>Build-volume</td>
+                                                                 <td>260x195x190 mm</td>
+                                                             <tr>
+                                                                 <td>Print head travel speed</td>
+                                                                 <td>30 to 200 mm/s</td>
+                                                             <tr>
+                                                                 <td>XYZ accuracy</td>
+                                                                 <td>12, 12, 4 micron</td>
+                                                             <tr>
+                                                                 <td>Nozzle diameter</td>
+                                                                 <td>0.4 mm</td>
+                                                             <tr>
+                                                                 <td>Nozzle temperature</td>
+                                                                 <td>180 °C to 260 °C</td>
+                                                             <tr>
+                                                                 <td>Filament diameter</td>
+                                                                 <td>1.75mm</td>
+                                                             <tr>
+                                                                 <td>Supported materials</td>
+                                                                 <td>ABS, PLA, PET, Nylon, Flex, Polystyrene, Laywood</td>
+                                                             <tr>
+                                                                 <td>Changeable extruder</td>
+                                                                 <td>Clay, Resin</td>
+                                                             </table>
+                 </div>
+             </div>
+             <br><br>
+                 <div class = "row"><div class = "col">    <h4>BoXZY</h4></div></div>
+                 <div class = "row">
+                     <div class = "col-sm-4">
+                         <img class="machinesimg" src="{% static 'CSS/gallery/jpg/machines/boxzy.jpg' %}">
+                     </div>
+                     <div class = "col-sm-8">
+                         <table class="table table-hover  table-bordered">
+                                                         <tr>
+                                                             <th colspan="2"> 3D printing</th>
+                                                         </tr>
+
+                                                             <tr>
+                                                                 <td>Layer resolution</td>
+                                                                 <td>20 microns</td>
+                                                             </tr>
+                                                             <tr>
+                                                                 <td>Print technology</td>
+                                                                 <td>Fused Deposition Modelling (FDM)</td>
+                                                             </tr>
+                                                             <tr>
+                                                                 <td>Build Volume</td>
+                                                                 <td>165x165x165 mm</td>
+                                                             </tr>
+                                                             <tr>
+                                                                 <td>Print head travel feed</td>
+                                                                 <td>30 to 300 mm/s</td>
+                                                             </tr>
+                                                             <tr>
+                                                                 <td>Nozzle diameter</td>
+                                                                 <td>0.4 mm</td>
+                                                             </tr>
+                                                             <tr>
+                                                                 <td>Nozzle temperature</td>
+                                                                 <td>180°C to 260°C</td>
+                                                             </tr>
+                                                             <tr>
+                                                                 <td>Filament diameter</td>
+                                                                 <td>1.75 mm</td>
+                                                             </tr>
+                                                             <tr>
+                                                                 <td>Supported materials</td>
+                                                                 <td>PLA, ABS, Ninja</td>
+                                                             </tr>
+
+                                                             <tr>
+                                                                 <th colspan="2">Milling</th>
+                                                             </tr>
+
+                                                             <tr>
+                                                                 <td>Material</td>
+                                                                 <td>ABS, Acetal, Brass, Bronze Silver, PVC</td>
+                                                             </tr>
+
+
+
+
+
+                                                                <tr>
+                                                                    <th colspan="2">   Laser engraving</th>
+                                                                </tr>
+
+                                                             <tr>
+                                                                 <td>Spectrum</td>
+                                                                 <td>445 nm</td>
+                                                             </tr>
+                                                             <tr>
+                                                                 <td>Material</td>
+                                                                 <td>Hardwoods, Opaque Plastic, Anodized Aluminium</td>
+                                                             </tr>
+                                                         </table>
+                     </div>
+                 </div>
+             <br><br>
+
+             <div class = "row"><div class = "col">    <h4>3D System’s Projet MJP 3600</h4></div></div>
+             <div class = "row">
+                 <div class = "col-sm-4">
+                     <img class="machinesimg" src="{% static 'CSS/gallery/jpg/machines/project.png' %}">
+                 </div>
+                 <div class = "col-sm-8">
+                     <table class="table table-hover  table-bordered">
+                                                                <tr>
+                                                                 <td>Build Volume</td>
+                                                                 <td>
+                                                                     HD298 x 183 x 203 mm<br>
+                                                                     UHD & XHD 203 x 178 x 203 mm
+                                                                 </td>
+                                                             </tr>
+                                                             <tr>
+                                                                 <td>Printing Technology</td>
+                                                                 <td>Multijet Printing</td>
+                                                             </tr>
+                                                             <tr>
+                                                                 <td>Resolution XYZ</td>
+                                                                 <td>
+                                                                     HD Mode: 32 micron<br>
+                                                                     UHD Mode: 29 micron<br>
+                                                                     XHD Mode: 16 micron
+                                                                 </td>
+                                                             </tr>
+
+                                                             <tr>
+                                                                 <td>Build Materials</td>
+                                                                 <td>
+                                                                     <table class="table table-hover ">
+                                                                         <tr>
+                                                                             <td>VisiJet M3-X</td>
+                                                                             <td>Rigid White VisiJet M3</td>
+                                                                         </tr>
+                                                                         <tr>
+                                                                             <td>Crystal</td>
+                                                                             <td>Rigid Clear VisiJet M3</td>
+                                                                         </tr>
+                                                                         <tr>
+                                                                             <td>Black</td>
+                                                                             <td>Rigid Black VisiJet M3</td>
+                                                                         </tr>
+                                                                         <tr>
+                                                                             <td>Proplast</td>
+                                                                             <td>Rigid Natural VisiJet M3</td>
+                                                                         </tr>
+                                                                         <tr>
+                                                                             <td>Navy</td>
+                                                                             <td>Rigid Blue VisiJet M3</td>
+                                                                         </tr>
+                                                                         <tr>
+                                                                             <td>Techplast</td>
+                                                                             <td>Rigid Gray VisiJet M3</td>
+                                                                         </tr>
+                                                                         <tr>
+                                                                             <td>Procast</td>
+                                                                             <td>Castable</td>
+                                                                         </tr>
+                                                                     </table>
+                                                                 </td>
+                                                             </tr>
+                                                             <tr>
+                                                                 <td>Support Material</td>
+                                                                 <td>Wax</td>
+                                                             </tr>
+                     </table>
+                 </div>
+             </div>
+         </div>
+     </div>
+
+     </body>
+{% endblock %}
+
+ 

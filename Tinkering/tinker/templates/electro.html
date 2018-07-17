@@ -1,0 +1,168 @@
+﻿{% extends 'layout_logged_in.html' %}
+{% load static %}
+{% block content %}
+<style>
+    .main
+    {
+        padding:10vh 10vw 10vh 10vw;
+    }
+
+</style>
+    
+        
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+         
+     
+     <body>
+
+
+
+
+     <link rel="stylesheet" href="{% static 'CSS/faci2.css' %}">
+
+
+
+
+
+     <div id ="top"  class="main">
+
+	<div id = "Millers"><br><br>
+             <h3>Wood Millers</h3><br>
+
+
+             <div class = "row"><div class = "col">    <h4>Inventable’s Carvey</h4></div></div><br>
+             <div class = "row">
+                 <div class = "col-sm-4">
+                     <img class="machinesimg" src="{% static 'CSS/gallery/jpg/machines/inventables.jpg' %}">
+                 </div>
+                 <div class = "col-sm-8">
+                     <table class="table table-hover  table-bordered">
+
+
+
+
+                         <tr>
+                             <td>Accuracy</td>
+                             <td>0.003″</td>
+                         </tr>
+                         <tr>
+                             <td>Spindle runout</td>
+                             <td>0.001″</td>
+                         </tr>
+                         <tr>
+                             <td>Motor resolution</td>
+                             <td>0.001″ or greater</td>
+                         </tr>
+                         <tr>
+                             <td>Spindles</td>
+                             <td>300W DC spindle with RPM 12,000</td>
+                         </tr>
+                         <tr>
+                             <td>Bit Size</td>
+                             <td>1/16″ solid carbide bit</td>
+                         </tr>
+                         <tr>
+                             <td>Work Area Width (X-axis)</td>
+                             <td>29 cm</td>
+                         </tr>
+                         <tr>
+                             <td>Depth (Y-axis)</td>
+                             <td>20 cm</td>
+                         </tr>
+                         <tr>
+                             <td>Height (Z-axis)</td>
+                             <td>7 cm</td>
+                         </tr>
+                         <tr>
+                             <td>Material Used</td>
+                             <td>MDF, Acrylic, Wood, Aluminium, Plastic, Copper</td>
+                         </tr>
+                     </table>
+                 </div>
+             </div>
+         </div>
+
+
+         <div class = "row"><div class = "col">    <h4>BoXZY</h4></div></div>
+         <div class = "row">
+             <div class = "col-sm-4">
+                 <img class="machinesimg" src="{% static 'jpg/machines/boxzy.jpg' %}">
+             </div>
+             <div class = "col-sm-8">
+                 <table class="table table-hover  table-bordered">
+                     <tr>
+                         <th colspan="2"> 3D printing</th>
+                     </tr>
+
+                     <tr>
+                         <td>Layer resolution</td>
+                         <td>20 microns</td>
+                     </tr>
+                     <tr>
+                         <td>Print technology</td>
+                         <td>Fused Deposition Modelling (FDM)</td>
+                     </tr>
+                     <tr>
+                         <td>Build Volume</td>
+                         <td>165x165x165 mm</td>
+                     </tr>
+                     <tr>
+                         <td>Print head travel feed</td>
+                         <td>30 to 300 mm/s</td>
+                     </tr>
+                     <tr>
+                         <td>Nozzle diameter</td>
+                         <td>0.4 mm</td>
+                     </tr>
+                     <tr>
+                         <td>Nozzle temperature</td>
+                         <td>180°C to 260°C</td>
+                     </tr>
+                     <tr>
+                         <td>Filament diameter</td>
+                         <td>1.75 mm</td>
+                     </tr>
+                     <tr>
+                         <td>Supported materials</td>
+                         <td>PLA, ABS, Ninja</td>
+                     </tr>
+
+                     <tr>
+                         <th colspan="2">Milling</th>
+                     </tr>
+
+                     <tr>
+                         <td>Material</td>
+                         <td>ABS, Acetal, Brass, Bronze Silver, PVC</td>
+                     </tr>
+
+
+
+
+
+                     <tr>
+                         <th colspan="2">   Laser engraving</th>
+                     </tr>
+
+                     <tr>
+                         <td>Spectrum</td>
+                         <td>445 nm</td>
+                     </tr>
+                     <tr>
+                         <td>Material</td>
+                         <td>Hardwoods, Opaque Plastic, Anodized Aluminium</td>
+                     </tr>
+                 </table>
+             </div>
+         </div>
+
+
+     </div>
+
+     </body>
+{% endblock %}
+
+ 

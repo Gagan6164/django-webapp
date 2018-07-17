@@ -1,0 +1,126 @@
+﻿{% extends 'layout_logged_in.html' %}
+{% load static %}
+{% block content %}
+<style>
+    .main
+    {
+        padding:10vh 10vw 10vh 10vw;
+    }
+
+</style>
+    
+         
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+         
+     
+     <body>
+
+
+
+
+     <link rel="stylesheet" href="{% static 'CSS/faci2.css' %}">
+
+
+
+
+
+     <div id ="top"  class="main">
+
+	<div id="3DScanner"><br><br>
+
+
+         <h3>3D scanners</h3>
+         <br>
+
+         <div class = "row"><div class = "col">    <h4>NextEngine’s MultiStripe Laser Triangulation</h4></div></div>
+         <div class = "row">
+             <div class = "col-sm-4">
+                 <img class="machinesimg" src="{% static 'CSS/gallery/jpg/machines/nextengine.jpg' %}">
+             </div>
+             <div class = "col-sm-8">
+                 <table class="table table-hover  table-bordered">
+
+                     <tr>
+                         <td>Field size</td>
+                         <td>5.1" x 3.8" (Macro) and 13.5" x 10.1" (Wide)</td>
+                     </tr>
+                     <tr>
+                         <td>ProScan extended mode</td>
+                         <td>22.5” x 16.75”</td>
+                     </tr>
+                     <tr>
+                         <td>Capture density</td>
+                         <td>On target surface capture up to 268K points/in²(Marco), 29K points/in² (Wide).</td>
+                     </tr>
+                     <tr>
+                         <td>Texture density</td>
+                         <td>500 DPI in Macro Mode and 200 DPI in Wide Mode</td>
+                     </tr>
+                     <tr>
+                         <td>Dimensional accuracy</td>
+                         <td>±0.005" in Macro Mode and ±0.015" in Wide Mode</td>
+                     </tr>
+                     <tr>
+                         <td>Acquisition speed</td>
+                         <td>50,000 processed points/sec throughput</td>
+                     </tr>
+                     <tr>
+                         <td>Object size</td>
+                         <td>No preset limit. Objects larger than field can be assembled with supplied software</td>
+                     </tr>
+                     <tr>
+                         <td>SensorTwin</td>
+                         <td>5.0 Megapixel CMOS image sensors</td>
+                     </tr>
+                 </table>
+             </div>
+         </div>
+
+
+         <br>
+
+         <div class = "row"><div class = "col">    <h4>Creaform’s Scanner</h4></div></div><br>
+         <div class = "row">
+             <div class = "col-sm-4">
+                 <img class="machinesimg" src="{% static 'jpg/machines/creaform.png' %}">
+             </div>
+             <div class = "col-sm-8">
+                 <table class="table table-hover  table-bordered">
+                     <tr>
+                         <td>Accuracy</td>
+                         <td>Up to 0.040 mm (0.0016 in.)</td>
+                     <tr>
+                         <td>Volumetric accuracy</td>
+                         <td>0.020 mm + 0.100 mm/m (0.0008 in. + 0.0012 in./ft)</td>
+                     <tr>
+                         <td>Volumetric accuracy (with maxshot 3D)</td>
+                         <td>0.020 mm + 0.025 mm/m (0.0008 in. + 0.0003 in./ft)</td>
+                     <tr>
+                         <td>Resolution</td>
+                         <td>0.1 mm</td>
+                     </tr>
+                     <tr>
+                         <td>Applications</td>
+                         <td>CAD Design<br>
+                             Prototyping<br>
+                             Testing, Simulation and Analysis<br>
+                             Tooling Design<br>
+                             Replacement and Recycling
+                         </td>
+                     </tr>
+             </table>
+
+                </div>
+         </div>
+     </div>
+
+
+     </div>
+
+     </body>
+{% endblock %}
+
+ 
