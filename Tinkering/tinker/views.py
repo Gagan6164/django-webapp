@@ -3,6 +3,28 @@ from django.http import HttpResponseRedirect
 from  .forms import NameForm,contact,workstation_form,pro,feedback
 from .models import project_for_display
 
+def 3D_Printer(request):
+    return render(request, '3dprinter.html', {'title':"3D Printers ", 'user' : request.user,'page':"3D Printer" } )
+def 3D_Scanner(request):
+    return render(request, '3dscanner.html', {'title':"3D Scanner ", 'user' : request.user,'page':"3D Scanner" } )
+def laser(request):
+    return render(request, 'laserd.html', {'title':"Laser Ecthing ", 'user' : request.user,'page':"Laser Ecthing" } )
+def metal_milling(request):
+    return render(request, 'metald.html', {'title':"Metal Milling ", 'user' : request.user,'page':"Metal Milling" } )
+def Electronics(request):
+    return render(request, 'electro.html', {'title':"Electronics ", 'user' : request.user,'page':"Electronics" } )
+def wood_milling(request):
+    return render(request, 'wood.html', {'title':"Wood Milling ", 'user' : request.user,'page':"Wood Milling" } )
+
+
+
+
+
+
+
+
+
+
 
 
 def index(request):
