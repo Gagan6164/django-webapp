@@ -27,7 +27,13 @@ urlpatterns = [
     path('accounts/profile/My_Profile', views.myprof),
     path('accounts/profile/feedback', views.feedback_form),
     url(r"^accounts/profile/Workstation-Booking$",views.Workstation , name="work")
-
+    path('3DPrinter', views.3D_Printer),
+    path('3DScanner', views.3D_Scanner),
+    path('Laser', views.laser),
+    path('Milling', views.metal_milling),
+    path('Electronics', views.Electronics),
+    path('Wood-Milling', views.wood_milling)
+    
 
 
 ]+static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
