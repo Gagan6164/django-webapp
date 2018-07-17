@@ -3,9 +3,9 @@ from django.http import HttpResponseRedirect
 from  .forms import NameForm,contact,workstation_form,pro,feedback
 from .models import project_for_display
 
-def 3D_Printer(request):
+def D_Printer(request):
     return render(request, '3dprinter.html', {'title':"3D Printers ", 'user' : request.user,'page':"3D Printer" } )
-def 3D_Scanner(request):
+def D_Scanner(request):
     return render(request, '3dscanner.html', {'title':"3D Scanner ", 'user' : request.user,'page':"3D Scanner" } )
 def laser(request):
     return render(request, 'laserd.html', {'title':"Laser Ecthing ", 'user' : request.user,'page':"Laser Ecthing" } )

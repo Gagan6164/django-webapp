@@ -26,11 +26,11 @@ urlpatterns = [
     path('accounts/profile/project', views.proje),
     path('accounts/profile/My_Profile', views.myprof),
     path('accounts/profile/feedback', views.feedback_form),
-    url(r"^accounts/profile/Workstation-Booking$",views.Workstation , name="work")
-    path('3DPrinter', views.3D_Printer),
-    path('3DScanner', views.3D_Scanner),
+    url(r"^accounts/profile/Workstation-Booking$",views.Workstation , name="work"),
+    path('3DPrinter', views.D_Printer),
+    path('3DScanner', views.D_Scanner),
     path('Laser', views.laser),
-    path('Milling', views.metal_milling),
+    path('Metal-Milling', views.metal_milling),
     path('Electronics', views.Electronics),
     path('Wood-Milling', views.wood_milling)
     
