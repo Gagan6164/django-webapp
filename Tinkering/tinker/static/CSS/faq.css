@@ -1,0 +1,27 @@
+ .faq_class
+ {
+     margin-top : 7vh;
+     padding: 0 5vw 5vw 10vw;
+
+
+ }
+
+details summary::-webkit-details-marker {
+  display:none;
+}
+
+    .faq_class details {
+        margin: 0 0 3vh 0;
+        padding:0 0 0 1vw;
+        Background: snow;
+        font-size:1.4em;
+        border-radius: 2em;
+    }
+
+        .faq_class details summary {
+            color: #ae08fe;
+
+            font-size: 1.2em;
+            outline: none;
+            font-weight: normal;
+        }

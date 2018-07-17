@@ -1,0 +1,152 @@
+ 
+
+
+
+.Top_Bar
+{
+    background-color: rgb(243, 246, 245);
+    position: fixed;
+    padding-left:3vw;
+    width:100%;
+    z-index: 100000;
+    left:0;
+    top:0;
+    right:0;
+    display: grid;
+
+
+}
+
+.Top_Bar a
+{
+    text-decoration: none;
+    color:black;
+}
+
+.tinker_text a
+{
+    font-family: 'Markazi Text', serif;
+    font-size: 5vh;
+    text-decoration: none;
+
+}
+
+
+
+
+.menu_button
+{
+    padding-top: 2vh;
+    font-size:3vh ;
+}
+
+
+
+.dropbtn {
+
+    font-size: 2.5vh;
+    background-color: #b377ff;
+    color:floralwhite;
+    padding: 0 1vw 0 1vw;
+    border: none;
+    min-height : 7vh;
+}
+
+.dropbtn:hover
+{
+    background-color: #ae08fe;
+}
+
+
+.dropdown {
+    position: relative;
+    float: right;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0  8px 16px 0 rgba(0,0,0,0.2);
+
+
+}
+
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {background-color: #b377ff;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color:#ae08fe;  }
+@media only screen and (max-width: 1200px) {
+
+    .Top_Bar {
+           grid-template-columns: auto auto 15%;
+    }
+
+}
+
+@media only screen and (min-width: 1199px) {
+
+    .Top_Bar {
+           grid-template-columns: auto auto 10.2%;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    .Top_Bar {
+           grid-template-columns: auto auto 18%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

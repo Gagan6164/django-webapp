@@ -1,0 +1,127 @@
+{% extends 'layout_logged_in.html' %}
+{%load static %}
+{% block content %}
+
+<style>
+
+    .main
+    {
+        padding:10vh 10vw 10vh 10vw;
+        font-size: 1.3em;
+
+    }
+    .main p
+    {
+        font-size: 1.2em;
+    }
+
+</style>
+
+
+<div class="main">
+
+
+    <p>Hello {{user.first_name}}, </p>
+
+    Profile details :<br><br>
+
+    <table class="table table-borderless">
+        <tr>
+             <td>
+                 Username
+            </td>
+
+            <td>
+                {{user}}
+            </td>
+        </tr>
+        <tr>
+            <td>
+                First Name
+            </td>
+
+            <td>
+                {{user.first_name}}
+            </td>
+
+        </tr>
+
+              <tr>
+            <td>
+                Last Name
+            </td>
+
+            <td>
+                {{user.last_name}}
+            </td>
+        </tr>
+        <tr>
+            <td>
+               Program
+            </td>
+
+            <td>
+                {{user.user_data.program}}
+            </td>
+
+        </tr>
+
+        <tr>
+            <td>
+                Department
+            </td>
+
+            <td>
+                {{user.user_data.Dep}}
+            </td>
+
+        </tr>
+
+        <tr>
+            <td>
+                Enrollment Number
+            </td>
+
+            <td>
+                {{user.user_data.Er_No}}
+            </td>
+
+        </tr>
+
+
+
+             <tr>
+            <td>
+                Email ID
+            </td>
+
+            <td>
+                {{user.email}}
+            </td>
+
+        </tr>
+
+
+        <tr>
+            <td>
+               Mobile Number
+            </td>
+
+            <td>
+                {{user.user_data.Mob_No}}
+            </td>
+
+        </tr>
+
+
+    </table>
+
+
+Let us inform in case of any discrepancy.
+</div>
+
+
+
+
+{% endblock%}
+

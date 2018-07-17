@@ -1,0 +1,49 @@
+.Note_Page
+
+{
+    background-image: url("gallery/wood.jpg");
+     background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: auto auto;
+    padding:6vh 10vw 10vh 10vw;
+
+}
+
+.Note_Data
+{
+    background: linear-gradient(rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.75));
+    border-radius: 1.5vh;
+    box-shadow: 0 0 1vw 0  black;
+    border: 2px  silver;
+    text-align: justify;
+    text-justify: inter-word;
+    max-width: 25vw;
+    padding: 1vh 1vw 10vh 1vw;
+    font-size: 1.4vw;
+    display:  block;
+    position: relative;
+
+    margin: 1vh 5vw 5vh 5vw;
+
+}
+
+.Note_Data img
+{
+    margin : 1vh 1vw 1vh 1vw;
+    border-radius: 1vw;
+    box-shadow: 0 0 1vw 0  black;
+    width:10vw;
+
+
+}
+.Note_end
+{
+    position:absolute;
+    right:1vw;
+    bottom:1vw;
+    display: block;
+
+}

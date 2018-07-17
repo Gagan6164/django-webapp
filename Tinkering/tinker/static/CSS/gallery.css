@@ -1,0 +1,21 @@
+body .gal {
+	font-family: sans-serif;
+}
+h2{
+	text-align:center;
+	color: forestgreen;
+	margin: 30px 0 50px;
+}
+.gallery{
+padding:0 5vw 0 5vw;
+}
+.gallery img{
+	width: 20vw;
+	transition:1s;
+	
+}
+.gallery img:hover{
+
+	transform: scale(1.1);
+	
+}

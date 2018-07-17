@@ -1,0 +1,19 @@
+ .faq_class
+ {
+     margin-top : 7vh;
+     padding: 0 5vw 5vw 10vw;
+
+ }
+
+    .faq_class details {
+        margin: 0 0 3vh 0;
+        Background: snow;
+        font-size:1.4em;
+    }
+
+        .faq_class details summary {
+            color: #ae08fe;
+            font-size: 1.2em;
+            outline: none;
+            font-weight: normal;
+        }

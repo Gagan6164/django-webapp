@@ -1,0 +1,390 @@
+﻿  {% load static %} 
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+
+
+
+
+
+    <link rel="stylesheet" href=" {% static '/CSS/header2.css'%}">
+    <link rel="stylesheet" href=" {% static '/CSS/contact.css'%}">
+    <link rel="stylesheet" href=" {% static '/CSS/icon.css'%}">
+    <meta charset="UTF-8">
+    <title>{{ title }}  </title>
+
+    <style>
+ 
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 10000000000;
+    top: 0;
+    left: -10vw;
+    background-color:white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding: 10vh 3vw 0 3vw;
+    margin : 0;
+
+
+}
+
+.sidenav a , summary{
+
+    text-decoration: none;
+    font-size: 1.3em;
+    color: #898989;
+    display: block;
+    transition: 0.3s;
+   font-weight:bold;
+
+}
+ 
+
+
+ 
+        .sidenav img {
+            width: 18vw;
+            
+
+        }
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+   
+}
+
+.overlay
+{
+    height: 100vh;
+    width: 100vw;
+    background-color :rgba(0,0,0,0.7);
+    position :fixed;
+    top:0;
+    left:0;
+    z-index:-200;
+    display:none;
+}
+
+
+
+</style>
+
+
+
+
+
+    
+</head>
+
+ <body>
+        <div id="mySidenav" class="sidenav">
+
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <center><img src="{%static 'CSS\gallery\rethink.png'%}" /></center>
+
+          <table  class="table table-borderless"   >
+
+
+              <tr>
+                  <td>
+                      <a href="/Home" id="1"> <i class="fa fa-home" ></i></a></td>&nbsp; <td><a href="/Home" id="1"> Home</td></a> </tr>
+
+
+                     <tr>
+                         <td><a href="/About" id="2"> <i class="fas fa-info-circle"></i></a></td>
+                         <td><a href="/About" id="2">About Us</a> </td></tr>
+
+
+                <tr>
+                    <td><a href="/updates" id="3">  <i class="fa fa-newspaper-o" ></i></a></td>
+                    <TD><a href="/updates" id="3"> Updates</a></TD>
+                </tr>
+            </a>
+
+
+
+
+
+                <tr>
+                    <td>    <a href="/faq" id="4"><i class="fa fa-question-circle" ></i></a></td>&nbsp;
+                    <td>     <a href="/faq" id="4">FAQs</a></td>
+                </tr>
+            </a>
+          </a>
+
+              <tr>
+                  <td>
+                      <a href = "/Projects" id="5">
+                        <i class="fas fa-tasks"></i>
+                      </a>
+                  </td>
+                  <td>
+                            <a href = "/Projects" id="5">
+                                Projects
+                            </a>
+                  </td>
+              </tr>
+
+
+
+
+
+              <tr>
+                  <td>
+                      <a href="/Notes" id="6">  <i class="fa fa-comments-o" aria-hidden="true"></i></a>
+
+                  </td>
+                  <td>
+                      <a href="/Notes" id="6">   Notes</a>
+
+                  </td>
+              </tr>
+
+
+                  <tr>
+
+                      <td>
+                          <a href="/team" id="7"><i class="fas fa-users"></i></a></td>
+
+
+                      <td> <a href="/team" id="7">Our Team</a></td>
+                    </tr>
+
+               <tr>
+                   <td><i class="fas fa-address-book"></i> </td>
+                   <td>
+                       <a href="/contact" id="8">Contact Us</a>
+
+                   </td>
+               </tr>
+
+
+
+        </table>
+
+
+
+        </div>
+        <div class="overlay" id="andhera" onclick="closeNav()"></div>
+
+
+
+
+
+<div id="main">
+
+     <div class="Top_Bar">
+                            <div class = " menu_button">
+                                <a href ="#" onclick="openNav()"><i class="fas fa-bars"></i></a>
+
+                            </div>
+
+                            <div class = "tinker_text">
+
+                                <a href = "/Home">   <rohit>Rethink!</rohit> The Tinkering Lab</a>
+
+
+                            </div>
+
+                             <div class = "login_button">
+                                    <div class="dropdown">
+                                        <button class="dropbtn"> My Account  </button>
+                                      <div class="dropdown-content">
+
+                                        {% if user.is_authenticated%}
+                                          <a href="/accounts/profile">My Account</a>
+                                          <a href="/accounts/profile/My_Profile">My Profile</a>
+                                          <a href="/logout">Logout</a>
+                                       
+                                           
+                                        {% else %}
+                                         
+                                            <a href="/login">Login</a>
+                                            <a href="/register">Register</a>
+                                          {% endif %}
+                                      </div>
+                                    </div>
+                             </div>
+                </div>
+
+
+
+
+             {% block content %}
+
+             {% endblock %}
+
+
+</div>
+
+
+     
+
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "25vw";
+    document.getElementById("mySidenav").style.left = "0";
+
+    document.getElementById("andhera").style.zIndex = "2000";
+    document.getElementById("andhera").style.display = "block";
+     
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("mySidenav").style.left = "-10vw";
+
+    document.getElementById("andhera").style.zIndex = "-2000";
+    document.getElementById("andhera").style.display = "none";
+ 
+}
+</script>
+</body>
+
+
+<footer>
+
+<div class="row foot">
+
+    <div class="col-sm-3">
+        <h2>Contact</h2>
+        <h3>Our Address</h3>
+
+        <p>
+            Tinkering laboratory,<br>
+            Hafiz Mohd. Ibrahim Building,<br>
+            Opposite Security office,<br>
+            Indian Institute of Technology Roorkee,<br>
+            Roorkee, Haridwar district,<br>
+            Uttarakhand, IN<br>
+            PIN - 247667<br>
+            <img src=" {% static 'CSS/gallery/phone.png'  %} "style="height:auto;width:1vw;">+91 1332 286581
+
+        </p>
+
+        <div class="social-btns">
+            <a  class="btn linkedin" href="https://www.linkedin.com/company/tinkering-lab-iit-roorkee/"><i class="fa fa-linkedin"></i></a>
+            <a  class="btn facebook" href="https://www.facebook.com/tinkeringlab.iitr/"><i  class="fa fa-facebook"></i></a>
+            <a  class="btn envelope" href="mailto:rethink.tinkering@gmail.com"><i  class="fa fa-envelope"></i></a>
+
+        </div>
+    </div>
+
+
+
+    <div id="map" class = "map col-sm-4"></div>
+
+    <script>
+        function initMap() {
+            var uluru = {lat: 29.863798, lng: 77.896653};
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 16,
+                center: uluru
+            });
+            var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+            });
+        }
+    </script>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC39MKVZINt5RP2nleAvjUkBmPJapdSd4k&callback=initMap">
+    </script>
+
+    <div class = "col-sm-5">&nbsp</div>
+
+
+
+
+
+
+
+</div>
+
+</footer>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

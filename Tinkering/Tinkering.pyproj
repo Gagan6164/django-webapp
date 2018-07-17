@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Name>Tinkering</Name>
+    <RootNamespace>Tinkering</RootNamespace>
+    <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>6564bc8b-4e20-4096-af7e-1de673bf299c</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{5F0BE9CA-D677-4A4D-8806-6076C0FAAD37};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>manage.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <WebBrowserUrl>http://localhost</WebBrowserUrl>
+    <LaunchProvider>Django launcher</LaunchProvider>
+    <DjangoSettingsModule>Tinkering.settings</DjangoSettingsModule>
+    <OutputPath>.</OutputPath>
+    <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="tinker\forms.py" />
+    <Compile Include="tinker\models.py" />
+    <Compile Include="tinker\tests.py" />
+    <Compile Include="tinker\views.py" />
+    <Compile Include="tinker\__init__.py" />
+    <Compile Include="tinker\migrations\__init__.py" />
+    <Compile Include="manage.py" />
+    <Compile Include="Tinkering\__init__.py" />
+    <Compile Include="Tinkering\settings.py" />
+    <Compile Include="Tinkering\urls.py" />
+    <Compile Include="Tinkering\wsgi.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="tinker\" />
+    <Folder Include="tinker\migrations\" />
+    <Folder Include="tinker\static\" />
+    <Folder Include="tinker\static\CSS\" />
+    <Folder Include="tinker\static\CSS\gallery\" />
+    <Folder Include="tinker\static\tinker\" />
+    <Folder Include="tinker\static\tinker\content\" />
+    <Folder Include="tinker\static\tinker\fonts\" />
+    <Folder Include="tinker\static\tinker\scripts\" />
+    <Folder Include="tinker\templates\" />
+    <Folder Include="Tinkering\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="db.sqlite3" />
+    <None Include="Tinkering20180702094429 - Web Deploy.pubxml" />
+    <Content Include="tinker\static\web.config" />
+    <Content Include="tinker\templates\updates.html">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="web.config" />
+    <None Include="tinker - Web Deploy1.pubxml" />
+    <Content Include="tinker\static\CSS\faq.css" />
+    <Content Include="tinker\static\CSS\gallery\rethink.png" />
+    <Content Include="tinker\static\CSS\main2.css" />
+    <Content Include="tinker\templates\faq.html" />
+    <Content Include="tinker\templates\team.html" />
+    <None Include="tinker - Web Deploy.pubxml" />
+    <None Include="Tinkeringlab - Web Deploy.pubxml" />
+    <Content Include="tinker\static\tinker\content\bootstrap.css" />
+    <Content Include="tinker\static\tinker\content\bootstrap.min.css" />
+    <Content Include="tinker\static\tinker\content\site.css" />
+    <Content Include="tinker\static\tinker\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="tinker\static\tinker\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="tinker\static\tinker\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="tinker\static\tinker\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="tinker\static\tinker\scripts\bootstrap.js" />
+    <Content Include="tinker\static\tinker\scripts\bootstrap.min.js" />
+    <Content Include="tinker\static\tinker\scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="tinker\static\tinker\scripts\jquery-1.10.2.js" />
+    <Content Include="tinker\static\tinker\scripts\jquery-1.10.2.min.js" />
+    <Content Include="tinker\static\tinker\scripts\jquery-1.10.2.min.map" />
+    <Content Include="tinker\static\tinker\scripts\jquery.validate-vsdoc.js" />
+    <Content Include="tinker\static\tinker\scripts\jquery.validate.js" />
+    <Content Include="tinker\static\tinker\scripts\jquery.validate.min.js" />
+    <Content Include="tinker\static\tinker\scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="tinker\static\tinker\scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="tinker\static\tinker\scripts\modernizr-2.6.2.js" />
+    <Content Include="tinker\static\tinker\scripts\respond.js" />
+    <Content Include="tinker\static\tinker\scripts\respond.min.js" />
+    <Content Include="tinker\static\tinker\scripts\_references.js" />
+    <Content Include="tinker\templates\index.html" />
+    <Content Include="tinker\templates\login.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="readme.html">
+      <SubType>WebBrowser</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="env\">
+      <Id>env</Id>
+      <Version>3.6</Version>
+      <Description>env (Python 3.6 (64-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Django.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,88 @@
+{% extends 'layout_logged_in.html' %}
+{%load static %}
+{% load bootstrap %}
+{% block content %}
+
+    <link rel="stylesheet" href=" {% static '/CSS/talk.css'%}">
+ 
+        <div class="back1">
+
+        </div>
+
+
+
+        <div class="content row ">
+
+            <div class="talk_del col-md-6">
+                <h4>Drop Your message here </h4><br>
+                 
+                            <form method = "post" action="">
+                                    {% csrf_token %}
+                                  {{ form|bootstrap}}
+                                 <input type = "submit" value = "Submit">
+                            </form>
+            </div>
+
+
+ 
+
+                <div class="talk_del2 col-md-6">
+                    <h4>You can write us on </h4><br>
+                    <table class="table table-borderless">
+                         <tr>
+                            <td>Tinkering Lab  </td>
+                            <td>
+                                    <a href  = "mailto:rethink.tinkering@gmail.com">rethink.tinkering@gmail.com</a><br>
+                                    <a href  = "mailto:rethink.tinkering@iitr.ac.in">rethink.tinkering@iitr.ac.in</a>
+                            </td>
+                        </tr>
+
+
+                        <tr> 
+                            <td>Students' Body  </td>
+                            <td><a href = "mailto:tinkerlabiitr@gmail.com">tinkerlabiitr@gmail.com</a></td>
+                        </tr>
+
+
+                        <tr>
+                            <td>Prof. Inderdeep Singh  <br> (Lab Coordinator)</td>
+                            <td style="text-align:top"><a href = "mailto:inderfme@iitr.ac.in">inderfme@iitr.ac.in</a></td>
+                        </tr>
+
+
+                        <tr>
+                            <td>Anant Vashistha <br> (Secretary)   </td>
+                            <td><a href = "mailto:avashistha@me.iitr.ac.in">avashistha@me.iitr.ac.in</a></td>
+                        </tr>
+
+                        <tr>
+                            <td> You can talk to us on </td>
+                            <td>+91 1332 286581</td>
+                        </tr>
+                        <tr>
+                            <td>You can visit us on </td>
+                            <td>
+                            <p>
+                            Tinkering laboratory,<br>
+                            Hafiz Mohd. Ibrahim Building,<br>
+                            Opposite Security office,<br>
+                            IIT Roorkee,<br>
+                            Roorkee, Haridwar district,<br>
+                            Uttarakhand, IN<br>
+                            PIN - 247667<br>
+
+                            </p>
+
+                            </td>
+                        </tr>
+
+                    </table>
+
+
+
+
+                </div>
+        </div>
+
+
+{% endblock %}

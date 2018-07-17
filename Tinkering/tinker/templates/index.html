@@ -1,0 +1,122 @@
+
+{% extends 'layout_logged_in.html' %}
+{% load static %}
+{% block content %}
+
+
+    <link rel="stylesheet" href=" {% static '/CSS/main.css'%}">
+    <body> 
+
+            <div class="Rethink_Video">
+
+             <video  id = "vid"   muted playsinline loop autoplay>
+                 <source  src = "{% static 'Rethink_Timelapse.mp4'%}" type="video/mp4">
+                 video is not asupported
+             </video>
+               <script>
+                   document.getElementById('vid').play();
+                </script>
+            </div>
+
+
+
+
+
+                        <div class="abt">
+                            <center> <h1>Tinkering Lab</h1></center>
+                            Tinkering Lab is a technical facility open to all the students of Indian Institute of Technology Roorkee. Here you can  go beyond your curriculum and have an opportunity to explore the various technological advancements that 21<sup>st</sup>           century has seen and get inspired  to start Tinkering, building and innovating for             converting creative ideas into actual engineering products.
+                        </div>
+
+            <div style="min-height: 90vh">&nbsp;</div>
+
+             <div class="home_facility">
+                 <center> Facilities
+
+
+                            <div class="row faci_row">
+                                <div class="col-md-4">
+                                   <img  src="{% static 'CSS/gallery/profile/workstation.jpg'%} ">
+                                   <br>Computational
+                                </div>
+
+                                <div class="col-md-4">
+                                   <img   src=" {% static 'CSS/gallery/Front_Faci_img/3dprint.jpg'  %}">
+                                   <br>3D Printers
+                                </div>
+
+                                <div class="col-md-4">
+                                   <img   src=" {% static 'CSS/gallery/Front_Faci_img/3D_Scanning.jpg'  %}">
+                                   <br>3D Scanning
+                                </div>
+
+                            </div>
+
+
+                            <div class="row faci_row">
+                                <div class="col-md-4">
+                                   <img   src=" {% static 'CSS/gallery/Front_Faci_img/Hand_Tools.jpg'  %}">
+                                   <br>Hand Tools
+                                </div>
+                                <div class="col-md-4">
+                                     <img   src=" {% static 'CSS/gallery/Front_Faci_img/Laser_Etching.jpg'  %}">
+                                   <br>Laser Etching
+                                </div>
+
+                                <div class="col-md-4">
+                                   <img   src=" {% static 'CSS/gallery/Front_Faci_img/Metal_Milling.jpg'  %}">
+                                   <br>Metal Milling
+                                </div>
+
+                            </div>
+
+
+
+			                <div class="row faci_row">
+
+                                <div class="col-md-4">
+                                                   <img   src=" {% static 'CSS/gallery/Front_Faci_img/Wood_Milling.jpg'  %}">
+                                                   <br>Wood  Milling
+                                </div>
+ 				                <div class="col-md-4">
+                                   <img   src=" {% static 'CSS/gallery/Front_Faci_img/Electronics_Facility.jpg'  %}">
+                                   <br>Electronics
+                                </div>
+				                <div class="col-md-4">
+                                   <img   src=" {% static 'CSS/gallery/Front_Faci_img/Wood_Milling.jpg'  %}">
+                                   <br>Workspace
+                                </div>
+
+ 			</div>
+
+
+                 </center>
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+{% endblock %}
+

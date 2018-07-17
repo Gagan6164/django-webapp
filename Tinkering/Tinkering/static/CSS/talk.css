@@ -1,0 +1,65 @@
+body
+{
+    overflow-x:hidden;
+    
+    padding-top:7vh;
+}
+
+.talk_del {
+    
+   padding-top:5vh;
+   padding-bottom:10vh;
+}
+.talk_del2 {
+    font-size: 1.3em;
+    padding-left: 4vw;
+    padding-bottom: 10vh;
+    padding-top: 5vh;
+}
+.talk_del input , textarea
+{
+    max-width:35vw;
+}
+ 
+
+.talk_del input[ type = 'submit']
+{
+    background-color   : whitesmoke;
+    border-radius : 0.2em;
+    border :0.1em solid black; 
+}
+
+
+
+
+
+@media only screen and (max-width: 992px) {
+
+
+        .content
+        {
+            padding-left: 10vw;
+            padding-top: 2vh;
+            display: flex;
+
+        }
+        .talk_del ,.talk_del2
+        {
+            padding: 3vh 0 0 0 ;
+        }
+
+}
+
+@media only screen and (min-width: 992px) {
+    .content {
+        background: url("gallery/svg/back_for_contact .svg") no-repeat;
+        background-position: center;
+        padding: 0 0 0 8vw;
+        background-attachment: fixed;
+    }
+
+
+
+
+
+}

@@ -1,0 +1,31 @@
+
+{% extends 'layout_logged_in.html' %}
+{%load static %}
+{% load bootstrap %}
+{% block content %}
+    <style>
+        input[type=submit]
+        {
+            float:right;
+            margin-right:1vw;
+        }
+
+        .projects
+        {
+            padding:10vh 10vw 10vh 10vw;
+            font-size:1.2em;
+
+        }
+
+    </style>
+
+    <div class = "projects">
+
+            <h1> Hi {{ user.first_name }}<br> Please fill the following details </h1>        <br>    <form method = "post" action="">
+                 {% csrf_token %}
+                 {{ form|bootstrap}}
+                 <input  class="btn btn-primary" type = "submit" value = "Submit">
+             </form>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,84 @@
+
+{% extends 'layout_logged_in.html' %}
+{%load static %}
+
+{% block content %}
+
+<link rel="stylesheet" href=" {% static '/CSS/account.css'%}">
+<body>
+<div class="myacc_body">
+<!--    <div>
+        {{ user }}
+   </div>-->
+    <div class="links_profile">
+
+        <a href="Workstation-Booking">
+        <center>
+            <img  src="{% static 'CSS/gallery/profile/workstation.jpg'%} ">
+            <p>Reserve a Workstation</p>
+        </center>
+        </a>
+    </div>
+
+    
+
+     <div class="links_profile">
+         <a href="project">
+                <center>
+                    <img src="{% static 'CSS/gallery/profile/project.jpg'%} ">
+                    <p>Start a Project</p>
+                </center>
+        </a>
+    </div>
+
+
+
+
+       <div class="links_profile">
+         <a href="#">
+                <center>
+                    <img  src="{% static 'CSS/gallery/profile/report.jpg'%} ">
+                    <p>Submit Report</p>
+                </center>
+        </a>
+
+    </div>
+       <div class="links_profile">
+         <a href="#">
+                <center>
+                    <img src="{% static 'CSS/gallery/profile/inventory.jpg'%} ">
+                    <p>Check Inventory</p>
+                </center>
+        </a>
+    </div>
+           <div class="links_profile">
+         <a href="/accounts/profile/feedback">
+                <center>
+                    <img  src="{% static 'CSS/gallery/profile/feedback.jpg'%} ">
+                    <p>Give your Feedback</p>
+                </center>
+        </a>
+
+    </div>
+    <div class="links_profile">
+         <a href="/contact">
+                <center>
+                    <img src="{% static 'CSS/gallery/profile/talk.jpg'%} ">
+                    <p>Talk to Us</p>
+                </center>
+        </a>
+    </div>
+
+
+
+
+
+
+
+</div>
+
+</center>
+
+</body>
+
+{% endblock %}

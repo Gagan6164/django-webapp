@@ -1,0 +1,23 @@
+{% extends 'layout_logged_in.html' %}
+{% load bootstrap %}
+{% load static %}
+{% block content %}
+
+    <link rel="stylesheet" href=" {% static '/CSS/register.css' %}">
+    <body>
+
+        <div class = "registration_form">
+            <h1> Welcome to Rethink Portal </h1>
+
+
+
+             <form method = "post">
+                 {% csrf_token %}
+                  {{ form3|bootstrap }}
+             <input type="submit" value="Register">
+            </form>
+         </div>
+ 
+
+    </body>
+{% endblock %}

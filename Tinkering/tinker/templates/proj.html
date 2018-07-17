@@ -1,0 +1,52 @@
+  {% extends 'layout_logged_in.html' %}
+{%load static %}
+{% load bootstrap %}
+{% block content %}
+<style>
+    .main
+
+    {
+
+        padding:10vh 10vw 10vh 10vw;
+    }
+
+     .main table tr th
+
+    {
+        font-size: 1.3rem;
+    }
+    .main table tr td
+    {
+        font-size: 1.2rem;
+    }
+</style>
+<div class="main">
+
+    <table class="table table-bordered table-striped">
+        <tr>
+            <th> Student's Name</th>
+            <th> Project title</th>
+        </tr>
+
+        {% for profile in data  %}
+        <tr >
+            <td>
+                {{profile.Name}}
+            </td>
+
+            <td>
+                {{profile.title}}
+            </td>
+        </tr>
+
+        {% endfor %}
+
+
+    </table>
+
+
+</div>
+
+
+
+{% endblock %}

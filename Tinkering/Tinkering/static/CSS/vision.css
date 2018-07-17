@@ -1,0 +1,100 @@
+
+@font-face {
+    font-family: Mangal;
+    src: url("MANGAL.TTF");
+}
+
+body,html
+{
+    margin:0;
+
+}
+body {
+    padding: 10vh 0 0 0;
+}
+
+.vision
+{
+    padding:0 5vw 5vw 5vw;
+    font-size: 1.5em;
+
+}
+
+.vision h4
+{
+    color:blue;
+    font-size: 1.3em;
+}
+#hindi
+{
+    font-family: Mangal;
+    color: red;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+.vision p
+{
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.vision p:last-child
+
+{
+    font-weight: bold;
+    text-align: center;
+    align-content: center;
+    align-self: center;
+    font-size: 1.2em;
+
+}
+
+.Workstation
+{
+    padding: 0 5vw 0 5vw;
+    font-size: 1.3em;
+}
+
+.Workstation p:first-child
+{
+    font-size: 1.5em;
+    color:blueviolet;
+}
+
+.Workstation p:nth-child(2)
+{
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+ .workstation_det
+{
+    display: grid;
+    grid-template-columns: auto auto ;
+    grid-column-gap:10vw;
+
+}
+
+ .workstation_det div
+{
+    display: block;
+    border: 0.054em solid black;
+    border-radius: 1em;
+    padding: 1vh 1vw 1vh 1vw;
+}
+
+.Workstation td
+{
+    padding-left: 1em;
+}
+
+.Workstation input[type=submit]
+{
+    background-color: #b377ff;
+}
+
+.Workstation input[type=submit]:hover
+{
+      background-color:#ae08fe;
+}

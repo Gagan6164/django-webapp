@@ -1,0 +1,113 @@
+@import url(//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+html {
+    box-sizing: border-box;
+}
+
+.social-btns .btn,
+.social-btns .btn:before,
+.social-btns .btn .fa {
+  transition: all 0.35s;
+  transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+}
+.social-btns .btn:before {
+  top: 90%;
+  left: -110%;
+}
+.social-btns .btn .fa {
+  -webkit-transform: scale(0.8);
+  transform: scale(0.8);
+}
+.social-btns .btn.facebook:before {
+  background-color: #3b5998;
+}
+
+.social-btns .btn.facebook .fa {
+  color: #3b5998;
+}
+
+.social-btns .btn.envelope:before {
+  background-color: #f26798;
+}
+
+.social-btns .btn.envelope .fa {
+  color: #f26798;
+}
+
+.social-btns .btn.linkedin:before {
+  background-color: #3cf;
+}
+.social-btns .btn.linkedin .fa {
+  color: #3cf;
+}
+.social-btns .btn.google:before {
+  background-color: #dc4a38;
+}
+.social-btns .btn.google .fa {
+  color: #dc4a38;
+}
+.social-btns .btn.dribbble:before {
+  background-color: #f26798;
+}
+.social-btns .btn.dribbble .fa {
+  color: #f26798;
+}
+.social-btns .btn.skype:before {
+  background-color: #00aff0;
+}
+.social-btns .btn.skype .fa {
+  color: #00aff0;
+}
+.social-btns .btn:focus:before,
+.social-btns .btn:hover:before {
+  top: -10%;
+  left: -10%;
+}
+.social-btns .btn:focus .fa,
+.social-btns .btn:hover .fa {
+  color: #fff;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+.social-btns {
+ display: inline;
+
+  margin: auto;
+  font-size: 0;
+  text-align: center;
+
+}
+.social-btns .btn {
+  display: inline-block;
+  background-color: #fff;
+  margin: 0 10px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 28%;
+  box-shadow: 0 5px 15px -5px rgba(0,0,0,0.1);
+  opacity: 0.99;
+  height:4vw;
+  width:4vw;
+}
+.social-btns .btn:before {
+  content: '';
+  width: 120%;
+  height: 120%;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.social-btns .btn .fa {
+  font-size: 2vw;
+  vertical-align: middle;
+}
+
+.icons
+{
+width: 1vw;
+}
+.icons hover:
+{
+
+
+}

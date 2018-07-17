@@ -1,0 +1,170 @@
+list-social-icons a {
+    color: #495057;
+}
+
+.list-social-icons a:hover {
+    color: #BD5D38;
+}
+
+.list-social-icons a .fa-lg {
+    font-size: 1.75rem;
+}
+
+
+
+
+.list-icons .list-inline-item i:hover {
+    color: #BD5D38;
+}
+ 
+
+
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+.tp
+{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 1vh 1vw;
+    padding-left: 10vw;
+    z-index: 2 ;
+text-align: center;
+
+}
+
+.tp h1
+{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+ .tp img
+ {
+     width:12vw;
+     height: auto;
+     border-radius: 50%;
+     opacity: 100%;
+ }
+ .tp td{
+     text-align: center;
+     font-size: 1.3vw;
+ }
+
+
+.map
+{
+    width: 35vw;
+    height: 45vh;
+    margin-top: 2vh;
+    border-radius: 1vw;
+}
+.contact_class
+{
+   margin-top:7vh;
+}
+.contact
+{
+    display: grid;
+    grid-template-columns:auto auto;
+    background-color: #000000;
+    color:white;
+    height:55vh;
+    left:0;
+    position: absolute;
+    width: 100vw;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    padding-top: 5vh;
+    padding-left: 5vw;
+    z-index: 2;
+    grid-column-gap:10vw;
+}
+.contact td
+{
+    color:white;
+}
+.contact input
+{
+    background-color: black;
+    color: white;
+    border : 1px solid grey;
+    height:3vh;
+    width:auto;
+    border-radius: 1vh;
+}
+.contact input:hover
+{
+    border : 1px solid white;
+    background-color: white;
+    transition: 0.5s;
+    color:black
+}
+.contact textarea:hover
+{
+    border : 1px solid white;
+    background-color: white;
+    transition: 0.5s;
+    color:black
+}
+.contact textarea
+{
+    background-color: black;
+    color: white;
+    border : 1px solid grey;
+    border-radius: 1vh;
+}
+
+.contact input[type=submit]
+{
+    background-color: white;
+    color: black;
+    height: 3vh;
+    width: 4vw;
+}
+
+h1
+{
+    z-index: 2;
+}
+
+.bklogo
+{
+    position:fixed;
+    display:block;
+    z-index: -1;
+    padding-top: 5vh;
+}
+
+.bklogo img
+
+
+{
+
+
+    margin-left: 25vw;
+    margin-right: 30vw;
+    width:40vw;
+    float: contour;
+    height:auto;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .column {
+        width: 100%;
+        display: block;
+    .tp
+    {
+        grid-template-columns: auto ;
+    }
+    .contact
+    {
+        grid-template-columns: auto ;
+    }
+}
+}

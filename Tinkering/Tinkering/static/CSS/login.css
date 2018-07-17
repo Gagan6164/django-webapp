@@ -1,0 +1,55 @@
+.login_form
+{
+    align-items: center;
+    align-content: center;
+    margin:auto;
+    font-size: 1.3vw;
+    z-index: 2;
+}
+
+.login_body
+{
+
+    margin:0;
+    height:100vh;
+    width: 100vw;
+    display: flex;
+
+
+
+}
+
+.login_form h1
+{
+    color: #0db2ff;
+    font-weight: bold;
+
+}
+
+body{
+    overflow:hidden;
+}
+
+.bg , .bg2
+
+{
+    height:100%;
+    width:100%;
+    position: fixed;
+
+}
+
+.bg
+{
+    z-index: -1;
+     background-color: #af08ff;
+    -webkit-clip-path: polygon(69% 88%, 100% 44%, 100% 100%, 0 100%);
+    clip-path: polygon(69% 88%, 100% 44%, 100% 100%, 0 100%);
+}
+.bg2
+{
+        z-index: -2;
+        -webkit-clip-path: polygon(69% 88%, 100% 44%, 63% 79%, 0 100%);
+        clip-path: polygon(69% 88%, 100% 44%, 63% 79%, 0 100%);
+        background-color: #c78bff;
+}
