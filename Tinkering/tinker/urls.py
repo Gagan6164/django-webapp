@@ -3,6 +3,7 @@ from django.conf.urls import url
 from django.contrib.auth.views import login,logout
 from django.conf.urls.static import static
 from Tinkering import settings
+from django.views.generic.base import RedirectView
 
 
 from .import views
@@ -32,7 +33,9 @@ urlpatterns = [
     path('Laser', views.laser),
     path('Metal-Milling', views.metal_milling),
     path('Electronics', views.Electronics),
-    path('Wood-Milling', views.wood_milling)
+    path('Wood-Milling', views.wood_milling),
+    url(r'^favicon\.ico$', RedirectView.as_view(url='/static/favicon/favicon.ico'))
+    
     
 
 
