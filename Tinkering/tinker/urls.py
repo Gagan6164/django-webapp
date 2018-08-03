@@ -34,7 +34,7 @@ urlpatterns = [
     path('Metal-Milling', views.metal_milling),
     path('Electronics', views.Electronics),
     path('Wood-Milling', views.wood_milling),
-    url(r'^favicon\.ico$', RedirectView.as_view(url='/static/favicon/favicon.ico'))
+    url(r'^', include('favicon.urls'))
     
     
 
