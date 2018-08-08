@@ -1,7 +1,7 @@
 from django import forms
 from django.contrib.auth.models import User
 from django.contrib.auth.forms import UserCreationForm
-from .models import  worksation, project,feedback
+from .models import  worksation, project, feedback
 
 
 
@@ -74,7 +74,7 @@ source = (
 
 class NameForm(UserCreationForm):
     Er_No = forms.IntegerField(required = True, label="Enter Your Enrollment Number")
-    email = forms.EmailField(required=True)
+    email = forms.EmailField(required=True , label="Enter your Email address")
 
     class Meta:
         model = User
@@ -141,7 +141,7 @@ class pro(forms.ModelForm):
 
 
 
-class feedback(forms.ModelForm):
+class feed(forms.ModelForm):
     class Meta:
         model = feedback
         fields = (

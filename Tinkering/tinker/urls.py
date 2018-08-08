@@ -34,6 +34,7 @@ urlpatterns = [
     path('Metal-Milling', views.metal_milling),
     path('Electronics', views.Electronics),
     path('Wood-Milling', views.wood_milling),
+    path('Miscellaneous', views.misc),
     url(r'^', include('favicon.urls'))
     
     

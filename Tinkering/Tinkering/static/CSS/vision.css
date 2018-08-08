@@ -15,8 +15,10 @@ body {
 
 .vision
 {
-    padding:0 5vw 5vw 5vw;
+    margin:0 8vw 5vh 8vw;
+    padding: 3vw 3vw 3vw 3vw ;
     font-size: 1.5em;
+    background-color: #f3f6f5;
 
 }
 
@@ -39,16 +41,7 @@ body {
     text-justify: inter-word;
 }
 
-.vision p:last-child
 
-{
-    font-weight: bold;
-    text-align: center;
-    align-content: center;
-    align-self: center;
-    font-size: 1.2em;
-
-}
 
 .Workstation
 {

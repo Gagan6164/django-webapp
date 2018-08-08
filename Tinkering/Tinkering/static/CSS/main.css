@@ -7,15 +7,7 @@ body{
     padding-top: 10vh;
     overflow-x: hidden;
 }
-
-
-
-
-
-
-
-
-.Rethink_Video ,.Create_background_image
+.Rethink_Video
 {
     left:0;
     right:0;
@@ -43,29 +35,13 @@ body{
     min-height: 100vh;
     z-index: -100;
 }
-.Create_background_image
-
-{
-    background: url("gallery/3D_Printed.jpg");
-    z-index: 10;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 100vh;
-    width:100vw;
-
-
-}
-
-
-
-
-
 .abt
 {
-    background: linear-gradient(rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.75));
 
+    background: linear-gradient(rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.75));
+    border-radius: 1.5vh;
+    box-shadow: 0 0 1vw 0  black;
+    border: 2px  silver;
     padding : 2vh 2vw 2vh 2vw;
     margin : 0 0 0 0;
     display: block;
@@ -75,83 +51,90 @@ body{
     position:absolute;
     right:5vw;
     top:10vw;
-    border-radius: 1.5vh;
-    box-shadow: 0 0 1vw 0  black;
-    border: 2px  silver;
     text-align: justify;
     text-justify: inter-word;
-
+    color:black;
 }
 .abt h3
 {
     text-align: center;
 }
 
- 
- .link1  {
-    color:white;
-     font-size: 2vw;
-    text-decoration: none;
 
-
- }
-
-
-
-
-
-.create {
-    width: 100%;
-    min-height: 25vh;
-    color: white;
-    font-size: 4vw;
-    z-index: 10;
-    text-align: center;
-    display: block;
-    margin: 0 0 0 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.45));
-    padding-top: 7vh;
-}
-.Director_note
+.full
 {
-    z-index:4;
-    display : grid;
-    margin:0 0 0 0;
-    padding:5vh 5vw 0 5vw;
-    font-size: 1.5vw;
-    max-width: 100%;
-    background: url("gallery/wood.jpg") no-repeat fixed center;
-    background-size: 100%;
-    color: white;
-    width:100vw;
+    font-size: 2.5vw;
+    padding: 0;
+    margin: 0;
+
+}
+
+.dark
+{
+    position:fixed;
+    z-index: -100;
+    background-color: rgba(0, 0, 0, 0.7);
     left:0;
-
-}
-.Director_note img
-
-{
-
-    margin : 0 0 5vh 0;
-    width:25vw;
-    border-radius: 2vw;
-    box-shadow: 0 0 1vw 0  black;
-
-
+    right:0;
+    top:0;
+    bottom:0;
+    width:100vw;
+    height:100vh;
 }
 
 
-.Home_Footer
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.home_facility
 {
-    background-color:black;
-    min-height:30vh;
-    color:whitesmoke;
-    margin:0 0 0 0 ;
+
+    background-color: white;
+    z-index: 3;
+    padding: 10vh 10vw 5vw 10vh;
+    margin:0;
+    font-size: 2.6vw;
+    width:100vw;
+    font-weight: bold;
+
+
+
+}
+.home_facility  img
+{
+
+    border-radius: 0.4vw;
+    width: 18vw;
+
 }
 
-.Home_Footer h1
+.home_facility div
 {
-    margin: 0 0 0 0 ;
-    padding: 11vh 0 0 0 ;
-    font-size: 4vw;
+    font-size: 0.8em;
+    font-weight: normal;
 
+
+}
+
+.faci_row
+{
+    padding: 3vh 0 3vh  0;
 }

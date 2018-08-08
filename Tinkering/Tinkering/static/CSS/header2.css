@@ -1,10 +1,29 @@
  
+body
+{
+    font-family: 'Markazi Text', serif;
 
+}
+div
+{
+    font-family: 'Markazi Text', serif;
+
+
+}
+a
+{
+    font-family: 'Markazi Text', serif;
+}
+p
+{
+        font-family: 'Markazi Text', serif;
+}
 
 
 .Top_Bar
 {
-    background-color: rgb(243, 246, 245);
+  background-color: rgb(243, 246, 245);
+
     position: fixed;
     padding-left:3vw;
     width:100%;
@@ -80,6 +99,21 @@
     text-decoration: none;
     display: block;
 }
+
+rohit
+
+{
+    color:#ae08fe;
+
+}
+
+footer
+{
+    background-color: #f3f6f5;
+     padding: 5vh 5vw 5vh 5vw ;
+}
+
+
 .dropdown-content a:hover {background-color: #b377ff;}
 .dropdown:hover .dropdown-content {display: block;}
 .dropdown:hover .dropbtn {background-color:#ae08fe;  }
@@ -136,13 +170,22 @@
 
 
 
+.sidenav tr:hover
+{
+    transform: scale(1.1);
+    transition: ease 0.3s;
 
+}
 
+.sidenav tr:hover  td a
+{
+    color: black;
+}
 
-
-
-
-
+.sidenav tr
+{
+    transition: ease 0.3s;
+}
 
 
 

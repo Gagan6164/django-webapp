@@ -9,6 +9,7 @@ body
     
    padding-top:5vh;
    padding-bottom:10vh;
+
 }
 .talk_del2 {
     font-size: 1.3em;
@@ -30,6 +31,10 @@ body
 }
 
 
+.talk_del2 table tr td
+{
+    padding-left: 3vw;
+}
 
 
 
@@ -55,11 +60,29 @@ body
         background: url("gallery/svg/back_for_contact .svg") no-repeat;
         background-position: center;
         padding: 0 0 0 8vw;
-        background-attachment: fixed;
+
+        min-height: 100vh;
+
     }
 
 
 
 
 
+}
+ h4
+{
+    font-weight: bold;
+    font-size: 1.5vw;
+}
+
+form
+{
+    font-size: 1.3em;
+    font-weight: normal;
+}
+
+label
+{
+    font-weight: normal;
 }

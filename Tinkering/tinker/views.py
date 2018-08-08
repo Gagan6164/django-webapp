@@ -15,6 +15,8 @@ def Electronics(request):
     return render(request, 'electro.html', {'title':"Electronics ", 'user' : request.user,'page':"Electronics" } )
 def wood_milling(request):
     return render(request, 'wood.html', {'title':"Wood Milling ", 'user' : request.user,'page':"Wood Milling" } )
+def misc(request):
+    return render(request, 'miscellaneous.html', {'title':"Miscellaneous ", 'user' : request.user,'page':"Miscellaneous" } )
 
 
 
